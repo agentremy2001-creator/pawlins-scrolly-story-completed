@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pawlins Scrolly Story</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f7f3ed;
+  color: #202020;
+  line-height: 1.65;
+}
+
+header {
+  min-height: 65vh;
+  padding: 80px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background:
+    linear-gradient(rgba(0,0,0,0.58), rgba(0,0,0,0.58)),
+    url("assets/pawlins-1.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+header .inner {
+  max-width: 900px;
+}
+
+h1 {
+  font-size: clamp(2.4rem, 6vw, 5rem);
+  margin: 0 0 18px;
+}
+
+.subtitle {
+  font-size: clamp(1rem, 2vw, 1.35rem);
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+main {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 42px 18px 90px;
+}
+
+.step {
+  min-height: 90vh;
+  margin: 0 auto 70px;
+  padding: 42px 30px;
+  background: white;
+  border-radius: 22px;
+  box-shadow: 0 8px 26px rgba(0,0,0,0.12);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.step-number {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #676767;
+  font-weight: bold;
+  margin-bottom: 18px;
+}
+
+figure {
+  margin: 0 0 22px;
+}
+
+img {
+  display: block;
+  width: 100%;
+  max-height: 75vh;
+  object-fit: contain;
+  border-radius: 16px;
+  border: 1px solid #ddd;
+  background: white;
+}
+
+figcaption {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.text-box {
+  margin-top: 16px;
+  padding: 18px 20px;
+  border-radius: 14px;
+}
+
+.text-box h2 {
+  margin: 0 0 8px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.text-box p {
+  margin: 0;
+  font-size: 1.08rem;
+}
+
+.alt-box {
+  background: #f1efe9;
+  border-left: 6px solid #6d6d6d;
+}
+
+.narrative-box {
+  background: #eef3f7;
+  border-left: 6px solid #40627c;
+}
+
+footer {
+  text-align: center;
+  padding: 40px 20px 70px;
+  color: #555;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="inner">
+    <h1>Pawlins Scrolly Story</h1>
+    <p class="subtitle">A scrollytelling project showing images, charts, alt text, and narrative text from the Pawlins spreadsheet.</p>
+  </div>
+</header>
+
+<main>
+
+    <section class="step" data-image="assets/pawlins-1.jpg" data-alt="An image of the front of Pawlins">
+      <div class="step-number">Step 1</div>
+      
+        <figure>
+          <img src="assets/pawlins-1.jpg" alt="An image of the front of Pawlins">
+          <figcaption>An image of the front of Pawlins</figcaption>
+        </figure>
+        
+      <div class="text-box alt-box">
+        <h2>Alt Text</h2>
+        <p>An image of the front of Pawlins</p>
+      </div>
+      <div class="text-box narrative-box">
+        <h2>Narrative Text</h2>
+        <p>I am someone who has always believed in the importance of the human and animal relationship. It is because of this, that I frequently enjoy working at Pawlins. This is because it maintains that connection while the dogs are being borded.</p>
+      </div>
+    </section>
+    
+    <section class="step" data-image="assets/pawlins-2.jpg" data-alt="Another image of the front of Pawlins, this time it is being positioned at a side angle.">
+      <div class="step-number">Step 2</div>
+      
+        <figure>
+          <img src="assets/pawlins-2.jpg" alt="Another image of the front of Pawlins, this time it is being positioned at a side angle.">
+          <figcaption>Another image of the front of Pawlins, this time it is being positioned at a side angle.</figcaption>
+        </figure>
+        
+      <div class="text-box alt-box">
+        <h2>Alt Text</h2>
+        <p>Another image of the front of Pawlins, this time it is being positioned at a side angle.</p>
+      </div>
+      <div class="text-box narrative-box">
+        <h2>Narrative Text</h2>
+        <p>Recently, I had tasked myself with collecting data from my job. When coming up with the data set, I knew that favorite dog was easily a category I had to include. When looking back at my data for this assignment, I noticed there were some fascinating conclusions that could be drawn from them.</p>
+      </div>
+    </section>
+    
+    <section class="step" data-image="assets/chart-1.jpg" data-alt="This is a chart of the amount of breeds for each day that I have collecting data.">
+      <div class="step-number">Step 3</div>
+      
+        <figure>
+          <img src="assets/chart-1.jpg" alt="This is a chart of the amount of breeds for each day that I have collecting data.">
+          <figcaption>This is a chart of the amount of breeds for each day that I have collecting data.</figcaption>
+        </figure>
+        
+      <div class="text-box alt-box">
+        <h2>Alt Text</h2>
+        <p>This is a chart of the amount of breeds for each day that I have collecting data.</p>
+      </div>
+      <div class="text-box narrative-box">
+        <h2>Narrative Text</h2>
+        <p>As one can see from this chart, there is a disproportionate amount of dogs for each day. That is because there is a large amount of labs and doodles, but very few of the other breeds for each day. That would mean that most likely my favorite dogs for each day would have to be a lab or a doodle since they make up the majority of them right?</p>
+      </div>
+    </section>
+    
+    <section class="step" data-image="assets/chart-2.jpg" data-alt="This is a chart of the amount of breeds that were listed as a favorite in my dataset, going from largest amount to smallest amount.">
+      <div class="step-number">Step 4</div>
+      
+        <figure>
+          <img src="assets/chart-2.jpg" alt="This is a chart of the amount of breeds that were listed as a favorite in my dataset, going from largest amount to smallest amount.">
+          <figcaption>This is a chart of the amount of breeds that were listed as a favorite in my dataset, going from largest amount to smallest amount.</figcaption>
+        </figure>
+        
+      <div class="text-box alt-box">
+        <h2>Alt Text</h2>
+        <p>This is a chart of the amount of breeds that were listed as a favorite in my dataset, going from largest amount to smallest amount.</p>
+      </div>
+      <div class="text-box narrative-box">
+        <h2>Narrative Text</h2>
+        <p>However, the results of the chart paint a very different picture. As one can see here, while there are some labs, they by no means make up the majority. Most of breeds here are ones which there were much less of. Doodles outstanding of course, as they come in such varieties. So, what led me to choosing the breeds I chose for favorite dog each day?</p>
+      </div>
+    </section>
+    
+    <section class="step" data-image="https://upload.wikimedia.org/wikipedia/commons/6/68/Bulldog_franc%C3%A9s_fawn.jpg" data-alt="An image of a Brown French Bulldog looking curiously at the camera">
+      <div class="step-number">Step 5</div>
+      
+        <figure>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/68/Bulldog_franc%C3%A9s_fawn.jpg" alt="An image of a Brown French Bulldog looking curiously at the camera">
+          <figcaption>An image of a Brown French Bulldog looking curiously at the camera</figcaption>
+        </figure>
+        
+      <div class="text-box alt-box">
+        <h2>Alt Text</h2>
+        <p>An image of a Brown French Bulldog looking curiously at the camera</p>
+      </div>
+      <div class="text-box narrative-box">
+        <h2>Narrative Text</h2>
+        <p>To go over an example of a dog listed, here is a French Bulldog. While this breed is seen as some as being a freak-of-nature due to their many respiratory issues which cause them to have wild personalities, I have always seen that in a positive light. To me, their chaotic personalities and odd anatomy make them so much fun to be around.</p>
+      </div>
+    </section>
+    
+    <section class="step" data-image="https://upload.wikimedia.org/wikipedia/commons/1/17/Bamse5%C3%A5r.jpg" data-alt="An image of a Brindle Great Dane staring out into the distance panting">
+      <div class="step-number">Step 6</div>
+      
+        <figure>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/1/17/Bamse5%C3%A5r.jpg" alt="An image of a Brindle Great Dane staring out into the distance panting">
+          <figcaption>An image of a Brindle Great Dane staring out into the distance panting</figcaption>
+        </figure>
+        
+      <div class="text-box alt-box">
+        <h2>Alt Text</h2>
+        <p>An image of a Brindle Great Dane staring out into the distance panting</p>
+      </div>
+      <div class="text-box narrative-box">
+        <h2>Narrative Text</h2>
+        <p>Another example of a dog listed that some may scratch their heads at is the Great Dane. For some, they are too big to deal with, and their size tends to intimidate some potential owners. However to me, their size gives them a lot of character, and the ones I work with are so sweet and kind.</p>
+      </div>
+    </section>
+    
+    <section class="step" data-image="https://upload.wikimedia.org/wikipedia/commons/4/42/Carrot_and_brinjal.jpg" data-alt="An image of two Brown Basset Hounds, one in an orange seat and one laying on the floor">
+      <div class="step-number">Step 7</div>
+      
+        <figure>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/Carrot_and_brinjal.jpg" alt="An image of two Brown Basset Hounds, one in an orange seat and one laying on the floor">
+          <figcaption>An image of two Brown Basset Hounds, one in an orange seat and one laying on the floor</figcaption>
+        </figure>
+        
+      <div class="text-box alt-box">
+        <h2>Alt Text</h2>
+        <p>An image of two Brown Basset Hounds, one in an orange seat and one laying on the floor</p>
+      </div>
+      <div class="text-box narrative-box">
+        <h2>Narrative Text</h2>
+        <p>On the topic of these seemingly abnormal breeds, there is the Basset Hound. Basset Hounds have been always been seen as odd due to their low backs compared to other breeds, as well as their slumped faces. To me, their faces have always given them this aura of having some kind of sacred wisdom. I know that at the end of the day this is a dog, so there is no wisdom there, but it is still something I associate them with.</p>
+      </div>
+    </section>
+    
+    <section class="step" data-image="https://upload.wikimedia.org/wikipedia/commons/f/f6/20080821_%D0%A4%D0%B5%D0%B4%D1%8F_%D0%BD%D0%B0_%D0%BF%D1%80%D0%B8%D1%80%D0%BE%D0%B4%D1%96.JPG" data-alt="An image of a brown Dachsund in a field of green grass in front of a white soccer ball.">
+      <div class="step-number">Step 8</div>
+      
+        <figure>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/f/f6/20080821_%D0%A4%D0%B5%D0%B4%D1%8F_%D0%BD%D0%B0_%D0%BF%D1%80%D0%B8%D1%80%D0%BE%D0%B4%D1%96.JPG" alt="An image of a brown Dachsund in a field of green grass in front of a white soccer ball.">
+          <figcaption>An image of a brown Dachsund in a field of green grass in front of a white soccer ball.</figcaption>
+        </figure>
+        
+      <div class="text-box alt-box">
+        <h2>Alt Text</h2>
+        <p>An image of a brown Dachsund in a field of green grass in front of a white soccer ball.</p>
+      </div>
+      <div class="text-box narrative-box">
+        <h2>Narrative Text</h2>
+        <p>Another example of a dog with a low back is the Dachsund. Admittley, this was a breed that I forgot to include in my data, which I do apologize for. Despite that, I absolutley love this magnificent long-nosed creatures. Their long shape gives off the idea like their a little burrito, which is hard not to see as adorable.</p>
+      </div>
+    </section>
+    
+    <section class="step" data-image="https://upload.wikimedia.org/wikipedia/commons/2/24/Dog_owner_walking_his_dogs_on_the_beach..JPG?_=20141011051631" data-alt="An image of a human with a dachsund, a husky, a beagle, and a german shepherd on a beach">
+      <div class="step-number">Step 9</div>
+      
+        <figure>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Dog_owner_walking_his_dogs_on_the_beach..JPG?_=20141011051631" alt="An image of a human with a dachsund, a husky, a beagle, and a german shepherd on a beach">
+          <figcaption>An image of a human with a dachsund, a husky, a beagle, and a german shepherd on a beach</figcaption>
+        </figure>
+        
+      <div class="text-box alt-box">
+        <h2>Alt Text</h2>
+        <p>An image of a human with a dachsund, a husky, a beagle, and a german shepherd on a beach</p>
+      </div>
+      <div class="text-box narrative-box">
+        <h2>Narrative Text</h2>
+        <p>So, now with some examples made here of what breeds I like and why they stand out to me established, what is the main point of presenting all of this information? Well, it&#x27;s to go deeper into why I form connections with dogs in the first place. It is not because they are just a cute thing to have around. No, it is because they are living creatures that I am able to form an attachment to. That brings us top the next section, the human and animal connection.</p>
+      </div>
+    </section>
+    
+    <section class="step" data-image="https://upload.wikimedia.org/wikipedia/commons/a/a9/A_handicapped_dog_with_its_owner..JPG" data-alt="An image of a handicapped dog with its owner on the beach.">
+      <div class="step-number">Step 10</div>
+      
+        <figure>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/A_handicapped_dog_with_its_owner..JPG" alt="An image of a handicapped dog with its owner on the beach.">
+          <figcaption>An image of a handicapped dog with its owner on the beach.</figcaption>
+        </figure>
+        
+      <div class="text-box alt-box">
+        <h2>Alt Text</h2>
+        <p>An image of a handicapped dog with its owner on the beach.</p>
+      </div>
+      <div class="text-box narrative-box">
+        <h2>Narrative Text</h2>
+        <p>In the current age we live in where AI and search engine models are becoming more and more prevelent, it has become a priority I think to keep in tact human bonds and connections. One of the most important being with animals. In &quot;Models All the Way Down&quot; the author talks about the LAION-5B model, and how it cannot truly understand the world through the perspective of humans, as it is not one. This means the human-dog bod is outside of its understanding.</p>
+      </div>
+    </section>
+    
+    <section class="step" data-image="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Dog_Owner_Relationship.jpg/960px-Dog_Owner_Relationship.jpg?_=20130607082353" data-alt="An image of someone feeding a golden retriever.">
+      <div class="step-number">Step 11</div>
+      
+        <figure>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Dog_Owner_Relationship.jpg/960px-Dog_Owner_Relationship.jpg?_=20130607082353" alt="An image of someone feeding a golden retriever.">
+          <figcaption>An image of someone feeding a golden retriever.</figcaption>
+        </figure>
+        
+      <div class="text-box alt-box">
+        <h2>Alt Text</h2>
+        <p>An image of someone feeding a golden retriever.</p>
+      </div>
+      <div class="text-box narrative-box">
+        <h2>Narrative Text</h2>
+        <p>When someone looks at this image, I hope what they see of it is a tender image. Yet, when an AI looks at this image, all it sees is just data. In &quot;Big? Smart? Clean? Messy? Data in the Humanities&quot; the author points out that data is not really what is represented in an image. Instead it is just a partial representation of it. Because of that, it can never truly comprehend the tenderness of this image showcasing the human-dog bond.</p>
+      </div>
+    </section>
+    
+    <section class="step" data-image="https://upload.wikimedia.org/wikipedia/commons/d/d3/Bdog.JPG" data-alt="An image of a young girl holding a beagle.">
+      <div class="step-number">Step 12</div>
+      
+        <figure>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Bdog.JPG" alt="An image of a young girl holding a beagle.">
+          <figcaption>An image of a young girl holding a beagle.</figcaption>
+        </figure>
+        
+      <div class="text-box alt-box">
+        <h2>Alt Text</h2>
+        <p>An image of a young girl holding a beagle.</p>
+      </div>
+      <div class="text-box narrative-box">
+        <h2>Narrative Text</h2>
+        <p>Ultimatley, what I want people to take away from this is the importance of why we are so connected to dogs. Some of my reasons ultimatley come down to preferance, and that&#x27;s okay! I of course love all dogs, but the ones I create true attachments with are a lot of the ones listed above. Overall, I see this piece as a celebration of the human and dog bond and how important it is to hold onto that.</p>
+      </div>
+    </section>
+    
+</main>
+
+<footer>
+  End of Pawlins Scrolly Story
+</footer>
+
+</body>
+</html>
